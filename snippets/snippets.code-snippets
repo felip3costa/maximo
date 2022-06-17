@@ -1,0 +1,319 @@
+{
+	//SAMPLE COMMANDS
+
+	"isEmpty": {
+		"scope": "python, jython",
+		"prefix": "isEmpty",
+		"body":["isEmpty()",
+		"\tpass"]
+	},
+
+	"getMboSet": {
+		"scope": "python, jython",
+		"prefix": "getMboSet",
+		"body": "getMboSet('${2:}')"
+	},
+
+	"getBoolean": {
+		"scope": "python, jython",
+		"prefix": "getBoolean",
+		"body": "getBoolean('${2:}')"
+	},
+
+	"getString": {
+		"scope": "python, jython",
+		"prefix": "getString",
+		"body": "getString('${2:}')"
+	},
+
+	"getInt": {
+		"scope": "python, jython",
+		"prefix": "getInt",
+		"body": "getInt('${2:}')"
+	},
+
+	"getByte": {
+		"scope": "python, jython",
+		"prefix": "getByte",
+		"body": "getByte('${2:}')"
+	},
+
+	"getLong": {
+		"scope": "python, jython",
+		"prefix": "getLong",
+		"body": "getByte('${2:}')"
+	},
+
+	"getFloat": {
+		"scope": "python, jython",
+		"prefix": "getFloat",
+		"body":"getFloat('${2:}')"
+	},
+
+	"getDouble": {
+		"scope": "python, jython",
+		"prefix": "getDouble",
+		"body":"getDouble('${2:}')"
+	},
+
+	"getDate": {
+		"scope": "python, jython",
+		"prefix": "getDate",
+		"body": "getDate('${2:}')"
+	},
+
+	"app": {
+		"scope": "python, jython",
+		"prefix": "app",
+		"body":"app"
+	},
+
+	"interactive": {
+		"scope": "python, jython",
+		"prefix": "interactive",
+		"body":"interactive"
+	},
+
+	"mbo": {
+		"scope": "python, jython",
+		"prefix": "mbo",
+		"body":"mbo"
+	},
+
+	"user": {
+		"scope": "python, jython",
+		"prefix": "user",
+		"body":"user"
+	},
+
+	"domainid": {
+		"scope": "python, jython",
+		"prefix": "domainid",
+		"body":"domainid"
+	},
+
+	"errorgroup": {
+		"scope": "python, jython",
+		"prefix": "errorgroup",
+		"body":"errorgroup"
+	},
+
+	"errorkey": {
+		"scope": "python, jython",
+		"prefix": "errorkey",
+		"body":"errorkey"
+	},
+
+	"launchPoint": {
+		"scope": "python, jython",
+		"prefix": "launchPoint",
+		"body":"launchPoint"
+	},
+
+	"isNull": {
+		"scope": "python, jython",
+		"prefix": "isNull",
+		"body":"isNull('${1:}'):"
+	},
+
+	"isModified": {
+		"scope": "python, jython",
+		"prefix": "isModified",
+		"body":"isModified('${1:}')"
+	},
+
+	"count": {
+		"scope": "python, jython",
+		"prefix": "count",
+		"body":"count()"
+	},
+
+	"setValue": {
+		"scope": "python, jython",
+		"prefix": "setValue",
+		"body":"setValue('${1:}', '${2:}')"
+	},
+
+	"setValueNull": {
+		"scope": "python, jython",
+		"prefix": "setValueNull",
+		"body":"setValueNull('${1:}')"
+	},
+
+	"getThisMboSet": {
+		"scope": "python, jython",
+		"prefix": "getThisMboSet",
+		"body":"getThisMboSet()"
+	},
+	//end of sample commands
+
+
+	// SAMPLE COMMANDS WITH PREFIX MBO
+	"mbo.getBoolean": {
+		"scope": "python, jython",
+		"prefix": "mbo.getBoolean",
+		"body": "mbo.getBoolean('${1:}')"
+	},
+
+	"mbo.getMboSet": {
+		"scope": "python, jython",
+		"prefix": "mbo.getMboSet",
+		"body": "mbo.getMboSet('${1:}')"
+	},
+
+	"mbo.getString": {
+		"scope": "python, jython",
+		"prefix": "mbo.getString",
+		"body": "mbo.getString('${1:}')"
+	},
+
+	"mbo.getInt": {
+		"scope": "python, jython",
+		"prefix": "mbo.getInt",
+		"body":"mbo.getInt('${1:}')"
+	},
+
+	"mbo.getByte": {
+		"scope": "python, jython",
+		"prefix": "mbo.getByte",
+		"body": "mbo.getByte('${1:}')"
+	},
+
+	"mbo.getLong": {
+		"scope": "python, jython",
+		"prefix": "mbo.getLong",
+		"body":"mbo.getLong('${1:}')"
+	},
+
+	"mbo.getFloat": {
+		"scope": "python, jython",
+		"prefix": "mbo.getFloat",
+		"body": "mbo.getFloat('${1:}')"
+	},
+
+	"mbo.getDouble": {
+		"scope": "python, jython",
+		"prefix": "mbo.getDouble",
+		"body": "mbo.getDouble('${1:}')"
+	},
+
+	"mbo.getDate": {
+		"scope": "python, jython",
+		"prefix": "mbo.getDate",
+		"body": "mbo.getDate('${1:}')"
+	},
+
+	"mbo.setValue": {
+		"scope": "python, jython",
+		"prefix": "mbo.setValue",
+		"body":"mbo.setValue('${1:}', '${2:}')"
+	},
+
+	"mbo.setValueNull": {
+		"scope": "python, jython",
+		"prefix": "mbo.setValueNull",
+		"body":"mbo.setValueNull('${1:}')"
+	},
+
+	"mbo.setWhere": {
+		"scope": "python, jython",
+		"prefix": "setWhere",
+		"body":"mbo.setWhere('${1:}')"
+	}, 
+	//end mbo
+
+	//RETRIEVE LIST
+
+	"listOrder": {
+		"scope": "python, jython",
+		"prefix": "listOrder",
+		"body":"listOrder"
+	},
+
+	"listWhere": {
+		"scope": "python, jython",
+		"prefix": "listWhere",
+		"body":"listWhere"
+	},
+	//end of retrieve list
+
+	//OTHERS
+
+	"STRUCTURE | while": {
+		"scope": "python, jython",
+		"prefix": "while",
+		"body":["${0:varSet} = mbo.getMboSet('${1:RELATIONSHIP}')",
+				"${2:varMbo} = varSet.moveFirst()",
+				"while ${2:varMbo}:",
+				"\t# your condition here",
+				"\t${2:varMbo} = ${0:varSet}.moveNext()",
+			]
+		},
+		
+	"Service Error": {
+		"scope": "python, jython",
+		"prefix": "service.error",
+		"body": "service.error('configure','BlankMsg',['${1:}'])"
+	},
+
+	"VARIABLE | count": {
+		"scope": "python, jython",
+		"prefix": "count",
+		"body":"${1:tempCount} = mbo.getMboSet('${2:}').count():"
+	},
+	"VARIABLE | getThisMboSet": {
+		"scope": "python, jython",
+		"prefix": "getThisMboSet",
+		"body":"${1:tempVal} = mbo.getThisMboSet()"
+	},
+
+	"comment MAXIMO": {
+		"scope": "python, jython",
+		"prefix": "comment",
+		"body": [ "$BLOCK_COMMENT_START",
+		"-------------------------------------------------------------------",
+		"${APPNAME}",
+		"\tAutomation Script: ${TM_FILENAME}",
+		"\tCreated on: ${CURRENT_DATE}-${CURRENT_MONTH_NAME_SHORT}-${CURRENT_YEAR}",
+		"\tCreated by: ${1:author}",
+		"-------------------------------------------------------------------",
+		"UPDATES",
+		"\tUpdate: ${CURRENT_DATE}-${CURRENT_MONTH_NAME_SHORT}-${CURRENT_YEAR}",
+		"\t",
+		"-------------------------------------------------------------------",
+		"DETAILS FOR LAUNCHPOINTS",
+		"LPEXAMPLE: Example of condition launchpoint",
+		"-------------------------------------------------------------------",
+		"$BLOCK_COMMENT_END",
+		"",
+		]
+	}, 
+
+	//CONDITIONS
+
+	"CONDITION | isNull": {
+		"scope": "python, jython",
+		"prefix": "isNull if",
+		"body":["if mbo.isNull('${1:}'):",
+		"\tpass"]
+	},
+	"CONDITION | isModified": {
+		"scope": "python, jython",
+		"prefix": "isModified",
+		"body":["if mbo.isModified('${1:}'):",
+		"\tpass"]
+	},
+	"CONDITION | isEmpty": {
+		"scope": "python, jython",
+		"prefix": "isEmpty",
+		"body":["if mbo.getMboSet('${1:}').isEmpty():",
+		"\tpass"]
+	},
+	"CONDITION | launchPoint": {
+		"scope": "python, jython",
+		"prefix": "if launchPoint",
+		"body":["if launchPoint == '${1:}':",
+			"\tpass"]
+	},
+	//end of conditions
+}

@@ -1,0 +1,20 @@
+{
+    "name": "maximo",
+    "displayName": "mx-snippets",
+    "description": "maximo snippets for vscode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
