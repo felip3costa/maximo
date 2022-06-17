@@ -4,11 +4,28 @@
     "description": "maximo snippets for vscode",
     "version": "0.0.1",
     "engines": {
-        "vscode": "^1.68.0"
+        "vscode": "^1.18.0"
     },
     "categories": [
         "Snippets"
     ],
+    "publisher": "felip3costa",
+	"author": {
+		"name": "Felipe Costa"
+	},
+	"homepage": "https://github.com/felip3costa/maximo.git",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/felip3costa/maximo.git"
+	},
+	"bugs": {
+		"url": "https://github.com/felip3costa/maximo/issues"
+	},
+	"icon": "images/snippet-img.webp",
+	"keywords": [
+		"maximo",
+		"ibm"
+	],
     "contributes": {
         "snippets": [
             {
