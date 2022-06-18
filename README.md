@@ -1,14 +1,11 @@
-# maximo README
+# README 
+- Some python snippets for IBM's Maximo application.
 
-Some python snippets for IBM's Maximo application.
+## Release Notes 
+- Basic codes to help in the development of automation scripts for IBM's Maximo application
 
-
-## Release Notes
-- Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
+### 0.0.2 
 - Initial release
 
 
-**Enjoy!**
+**Enjoy**
