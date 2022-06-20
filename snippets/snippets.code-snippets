@@ -14,6 +14,12 @@
 		"body": "getMboSet('${2:}')"
 	},
 
+	"TEMP | getMboSet": {
+		"scope": "python, jython",
+		"prefix": "getMboSet",
+		"body": "getMboSet('${1:$TEMP}', '${1:OBJECTNAME}', '${1:WHERE CONDITION}')"
+	},
+
 	"getBoolean": {
 		"scope": "python, jython",
 		"prefix": "getBoolean",
@@ -68,6 +74,12 @@
 		"body":"app"
 	},
 
+	"add": {
+		"scope": "python, jython",
+		"prefix": "add",
+		"body":"add()"
+	},
+
 	"interactive": {
 		"scope": "python, jython",
 		"prefix": "interactive",
@@ -84,12 +96,6 @@
 		"scope": "python, jython",
 		"prefix": "user",
 		"body":"user"
-	},
-
-	"domainid": {
-		"scope": "python, jython",
-		"prefix": "domainid",
-		"body":"domainid"
 	},
 
 	"errorgroup": {
@@ -145,6 +151,12 @@
 		"prefix": "getThisMboSet",
 		"body":"getThisMboSet()"
 	},
+
+	"user": {
+		"scope": "python, jython",
+		"prefix": "user",
+		"body":"user"
+	},
 	//end of sample commands
 
 
@@ -159,6 +171,12 @@
 		"scope": "python, jython",
 		"prefix": "mbo.getMboSet",
 		"body": "mbo.getMboSet('${1:}')"
+	},
+
+	"TEMP | mbo.getMboSet": {
+		"scope": "python, jython",
+		"prefix": "mbo.getMboSet",
+		"body": "mbo.getMboSet('${1:$TEMP}', '${1:OBJECTNAME}', '${1:WHERE CONDITION}')"
 	},
 
 	"mbo.getString": {
@@ -220,9 +238,30 @@
 		"prefix": "setWhere",
 		"body":"mbo.setWhere('${1:}')"
 	}, 
+	"mbo.NOACCESSCHECK": {
+		"scope": "python, jython",
+		"prefix": "mbo.NOACCESSCHECK",
+		"body":"mbo.NOACCESSCHECK"
+		},
 	//end mbo
 
 	//RETRIEVE LIST
+	
+	"launchPoint RL": {
+		"scope": "python, jython",
+		"prefix": "retrieve list",
+		"body":["if launchPoint == '${1:}':",
+			"\tdomainid = ${2:}",
+			"\tlistWhere = ${3:}",
+			"\tlistOrder = ${4:}"
+		]
+	},
+
+	"domainid": {
+		"scope": "python, jython",
+		"prefix": "domainid",
+		"body":"domainid"
+	},
 
 	"listOrder": {
 		"scope": "python, jython",
@@ -249,7 +288,15 @@
 				"\t${2:varMbo} = ${0:varSet}.moveNext()",
 			]
 		},
-		
+	"STRUCTURE | for": {
+		"scope": "python, jython",
+		"prefix": "for",
+		"body":["${0:varSet} = mbo.getMboSet('${1:RELATIONSHIP}')",
+				"for i in range (${0:varSet}.count()):",
+				"\t${2:varMbo} = ${0:varSet}.getMbo(i)",
+			]
+		},
+
 	"Service Error": {
 		"scope": "python, jython",
 		"prefix": "service.error",
