@@ -296,6 +296,12 @@
 				"\t${2:varMbo} = ${0:varSet}.getMbo(i)",
 			]
 		},
+	
+	"System.out": {
+		"scope": "python, jython",
+		"prefix": "System.out",
+		"body":"System.out.println('${1:}')"
+		},
 
 	"Service Error": {
 		"scope": "python, jython",
