@@ -2,7 +2,7 @@
     "name": "maximo",
     "displayName": "mx-snippets",
     "description": "maximo snippets for vscode",
-    "version": "0.0.3",
+    "version": "0.0.31",
     "engines": {
         "vscode": "^1.18.0"
     },

@@ -1,6 +1,5 @@
 {
 	//SAMPLE COMMANDS
-
 	"isEmpty": {
 		"scope": "python, jython",
 		"prefix": "isEmpty",
@@ -17,7 +16,7 @@
 	"TEMP | getMboSet": {
 		"scope": "python, jython",
 		"prefix": "getMboSet",
-		"body": "getMboSet('${1:$TEMP}', '${1:OBJECTNAME}', '${1:WHERE CONDITION}')"
+		"body": "getMboSet('${1:$TEMP}', '${2:OBJECTNAME}', '${3:WHERE CONDITION}')"
 	},
 
 	"getBoolean": {
@@ -307,6 +306,12 @@
 		"scope": "python, jython",
 		"prefix": "service.error",
 		"body": "service.error('configure','BlankMsg',['${1:}'])"
+	},
+
+	"Service SetWarning": {
+		"scope": "python, jython",
+		"prefix": "service.setWarning",
+		"body": "service.setWarning('configure','BlankMsg',['${1:}'])"
 	},
 
 	"VARIABLE | count": {
